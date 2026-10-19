@@ -1,0 +1,226 @@
+/* Color Palette
+# 1B1F3B - dark navy (header/footer bg)
+# 3A6EA5 - steel blue (headings/links)
+# E8ECF1 - light grey (section bg)
+# FFB703 - gold accent (highlights)
+*/
+
+/* Box model fix
+------------------------------------*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Global styles
+------------------------------------*/
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    color: #222222;
+    background: #F5F7FA;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.content-wrap {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 50px;
+    overflow: hidden;
+}
+
+.column-narrow {
+    width: 30%;
+    float: left;
+    padding-right: 3%;
+    min-height: 175px;
+}
+
+.column-wide {
+    width: 70%;
+    float: left;
+    min-height: 225px;
+}
+
+
+/* Navigation
+------------------------------------*/
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #1B1F3B;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 10px 16px;
+    display: inline-block;
+}
+
+.navbar a:hover {
+    color: #FFB703;
+}
+
+.navbar a.nav-download {
+    background: #FFB703;
+    color: #1B1F3B;
+    border-radius: 4px;
+}
+
+.navbar a.nav-download:hover {
+    background: #ffffff;
+    color: #1B1F3B;
+}
+
+
+/* Header & Footer
+------------------------------------*/
+header {
+    background: #1B1F3B;
+    color: #ffffff;
+}
+
+.profile-img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+header h1,
+header h2 {
+    margin: 0;
+}
+
+header h1 {
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+header h2 {
+    color: #FFB703;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+footer {
+    background: #1B1F3B;
+    color: #ffffff;
+    text-align: center;
+}
+
+footer h2 {
+    color: #ffffff;
+}
+
+.contact-info a {
+    padding: 10px;
+    display: inline-block;
+    color: #FFB703;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-info a i {
+    margin-right: 6px;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+
+/* Work Experience
+------------------------------------*/
+.experience {
+    background: #E8ECF1;
+}
+
+.experience h2 {
+    color: #3A6EA5;
+    font-size: 1.6rem;
+    border-bottom: 2px solid #3A6EA5;
+    padding-bottom: 8px;
+}
+
+.experience h3 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.job-item {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+
+/* Projects
+------------------------------------*/
+.projects {
+    background: #ffffff;
+}
+
+.projects h2 {
+    color: #3A6EA5;
+    font-size: 1.6rem;
+    border-bottom: 2px solid #3A6EA5;
+    padding-bottom: 8px;
+}
+
+.projects h3 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+
+/* Education
+------------------------------------*/
+.education {
+    /* Background image with an RGBA gradient overlay so the white text
+       stays readable over the photo. Add your own image to
+       images/education-bg.jpg — any wide landscape/campus/skyline photo
+       works. The gradient goes from dark navy (left) to steel blue
+       (right), both at 85% opacity, layered on top of the photo. */
+    background-image: linear-gradient(120deg, rgba(27, 31, 59, 0.88), rgba(58, 110, 165, 0.82)), url('../images/education-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+}
+
+.education h2 {
+    color: #ffffff;
+    font-size: 1.6rem;
+    border-bottom: 2px solid #FFB703;
+    padding-bottom: 8px;
+}
+
+.education h3 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 2px;
+    color: #ffffff;
+}
